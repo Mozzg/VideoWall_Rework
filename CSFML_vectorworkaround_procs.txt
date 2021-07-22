@@ -1,0 +1,216 @@
+procedure SfmlCircleShapeSetPosition(Shape: PSfmlCircleShape; Position: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_setPosition';
+procedure SfmlCircleShapeSetScale(Shape: PSfmlCircleShape; Scale: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_setScale';
+procedure SfmlCircleShapeSetOrigin(Shape: PSfmlCircleShape; Origin: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_setOrigin';
+procedure SfmlCircleShapeMove(Shape: PSfmlCircleShape; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_move';
+procedure SfmlCircleShapeScale(Shape: PSfmlCircleShape; Factors: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_scale';
+procedure SfmlConvexShapeSetPosition(Shape: PSfmlConvexShape; Position: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setPosition';
+procedure SfmlConvexShapeSetScale(Shape: PSfmlConvexShape; Scale: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setScale';
+procedure SfmlConvexShapeSetOrigin(Shape: PSfmlConvexShape; Origin: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setOrigin';
+procedure SfmlConvexShapeMove(Shape: PSfmlConvexShape; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_move';
+procedure SfmlConvexShapeScale(Shape: PSfmlConvexShape; Factors: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_scale';
+procedure SfmlConvexShapeSetPoint(Shape: PSfmlConvexShape; Index: NativeUInt; Point: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setPoint';
+procedure SfmlRectangleShapeSetPosition(Shape: PSfmlRectangleShape; Position: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setPosition';
+procedure SfmlRectangleShapeSetScale(Shape: PSfmlRectangleShape; Scale: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setScale';
+procedure SfmlRectangleShapeSetOrigin(Shape: PSfmlRectangleShape; Origin: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setOrigin';
+procedure SfmlRectangleShapeMove(Shape: PSfmlRectangleShape; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_move';
+procedure SfmlRectangleShapeScale(Shape: PSfmlRectangleShape; Factors: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_scale';
+procedure SfmlRectangleShapeSetSize(Shape: PSfmlRectangleShape; Size: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setSize';
+procedure SfmlShaderSetVec2Uniform(Shader: PSfmlShader; const Name: PAnsiChar; Vector: TSfmlGlslVec2); cdecl; external CSfmlGraphicsLibrary name 'sfShader_setVec2Uniform';
+procedure SfmlShaderSetVector2Parameter(Shader: PSfmlShader; const Name: PAnsiChar; Vector: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShader_setVector2Parameter'; deprecated;
+procedure SfmlShapeSetPosition(Shape: PSfmlShape; Position: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_setPosition';
+procedure SfmlShapeSetScale(Shape: PSfmlShape; Scale: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_setScale';
+procedure SfmlShapeSetOrigin(Shape: PSfmlShape; Origin: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_setOrigin';
+procedure SfmlShapeMove(Shape: PSfmlShape; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_move';
+procedure SfmlShapeScale(Shape: PSfmlShape; Factors: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_scale';
+procedure SfmlSpriteSetPosition(Sprite: PSfmlSprite; Position: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_setPosition';
+procedure SfmlSpriteSetScale(Sprite: PSfmlSprite; Scale: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_setScale';
+procedure SfmlSpriteSetOrigin(Sprite: PSfmlSprite; Origin: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_setOrigin';
+procedure SfmlSpriteMove(Sprite: PSfmlSprite; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_move';
+procedure SfmlSpriteScale(Sprite: PSfmlSprite; Factors: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_scale';
+procedure SfmlTextSetPosition(Text: PSfmlText; Position: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_setPosition';
+procedure SfmlTextSetScale(Text: PSfmlText; Scale: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_setScale';
+procedure SfmlTextSetOrigin(Text: PSfmlText; Origin: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_setOrigin';
+procedure SfmlTextMove(Text: PSfmlText; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_move';
+procedure SfmlTextScale(Text: PSfmlText; Factors: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_scale';
+procedure SfmlTransformableSetPosition(Transformable: PSfmlTransformable; Position: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_setPosition';
+procedure SfmlTransformableSetScale(Transformable: PSfmlTransformable; Scale: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_setScale';
+procedure SfmlTransformableSetOrigin(Transformable: PSfmlTransformable; Origin: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_setOrigin';
+procedure SfmlTransformableMove(Transformable: PSfmlTransformable; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_move';
+procedure SfmlTransformableScale(Transformable: PSfmlTransformable; Factors: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_scale';
+procedure SfmlViewSetCenter(View: PSfmlView; Center: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_setCenter';
+procedure SfmlViewSetSize(View: PSfmlView; Size: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_setSize';
+procedure SfmlViewMove(View: PSfmlView; Offset: TSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_move';
+
+
+return workaround
+
+function SfmlCircleShapeGetPoint(const Shape: PSfmlCircleShape; Index: NativeUInt): TSfmlVector2f; cdecl;
+  function SfmlCircleShapeGetPosition(const Shape: PSfmlCircleShape): TSfmlVector2f; cdecl;
+  function SfmlCircleShapeGetOrigin(const Shape: PSfmlCircleShape): TSfmlVector2f; cdecl;
+  function SfmlCircleShapeGetScale(const Shape: PSfmlCircleShape): TSfmlVector2f; cdecl;
+  function SfmlConvexShapeGetOrigin(const Shape: PSfmlConvexShape): TSfmlVector2f; cdecl;
+  function SfmlConvexShapeGetPoint(const Shape: PSfmlConvexShape; Index: NativeUInt): TSfmlVector2f; cdecl;
+  function SfmlConvexShapeGetPosition(const Shape: PSfmlConvexShape): TSfmlVector2f; cdecl;
+  function SfmlConvexShapeGetScale(const Shape: PSfmlConvexShape): TSfmlVector2f; cdecl;
+  function SfmlImageGetSize(const Image: PSfmlImage): TSfmlVector2u; cdecl;
+  function SfmlRectangleShapeGetOrigin(const Shape: PSfmlRectangleShape): TSfmlVector2f; cdecl;
+  function SfmlRectangleShapeGetPoint(const Shape: PSfmlRectangleShape; Index: NativeUInt): TSfmlVector2f; cdecl;
+  function SfmlRectangleShapeGetPosition(const Shape: PSfmlRectangleShape): TSfmlVector2f; cdecl;
+  function SfmlRectangleShapeGetScale(const Shape: PSfmlRectangleShape): TSfmlVector2f; cdecl;
+  function SfmlRectangleShapeGetSize(const Shape: PSfmlRectangleShape): TSfmlVector2f; cdecl;
+  function SfmlRenderTextureGetSize(const RenderTexture: PSfmlRenderTexture): TSfmlVector2u; cdecl;
+  function SfmlRenderTextureMapPixelToCoords(const RenderTexture: PSfmlRenderTexture; Point: TSfmlVector2i; const View: PSfmlView): TSfmlVector2f; cdecl;
+  function SfmlRenderTextureMapCoordsToPixel(const RenderTexture: PSfmlRenderTexture; Point: TSfmlVector2i; const View: PSfmlView): TSfmlVector2i; cdecl;
+  function SfmlRenderWindowGetSize(const RenderWindow: PSfmlRenderWindow): TSfmlVector2u; cdecl;
+  function SfmlRenderWindowMapPixelToCoords(const RenderWindow: PSfmlRenderWindow; Point: TSfmlVector2i; const View: PSfmlView): TSfmlVector2f; cdecl;
+  function SfmlRenderWindowMapCoordsToPixel(const RenderWindow: PSfmlRenderWindow; Point: TSfmlVector2i; const View: PSfmlView): TSfmlVector2i; cdecl;
+  function SfmlMouseGetPositionRenderWindow(const RelativeTo: PSfmlRenderWindow): TSfmlVector2i; cdecl;
+  function SfmlTouchGetPositionRenderWindow(Finger: Cardinal; const RelativeTo: PSfmlRenderWindow): TSfmlVector2i; cdecl;
+  function SfmlShapeGetOrigin(const Shape: PSfmlShape): TSfmlVector2f; cdecl;
+  function SfmlShapeGetPoint(const Shape: PSfmlShape; Index: NativeUInt): TSfmlVector2f; cdecl;
+  function SfmlShapeGetPosition(const Shape: PSfmlShape): TSfmlVector2f; cdecl;
+  function SfmlShapeGetScale(const Shape: PSfmlShape): TSfmlVector2f; cdecl;
+  function SfmlSpriteGetOrigin(const Sprite: PSfmlSprite): TSfmlVector2f; cdecl;
+  function SfmlSpriteGetPosition(const Sprite: PSfmlSprite): TSfmlVector2f; cdecl;
+  function SfmlSpriteGetScale(const Sprite: PSfmlSprite): TSfmlVector2f; cdecl;
+  function SfmlTextFindCharacterPos(const Text: PSfmlText; Index: NativeUInt): TSfmlVector2f; cdecl;
+  function SfmlTextGetOrigin(const Text: PSfmlText): TSfmlVector2f; cdecl;
+  function SfmlTextGetPosition(const Text: PSfmlText): TSfmlVector2f; cdecl;
+  function SfmlTextGetScale(const Text: PSfmlText): TSfmlVector2f; cdecl;
+  function SfmlTextureGetSize(const Texture: PSfmlTexture): TSfmlVector2u; cdecl;
+  function SfmlTransformTransformPoint(const Transform: PSfmlTransform; Point: TSfmlVector2f): TSfmlVector2f; cdecl;
+  function SfmlTransformableGetOrigin(const Transformable: PSfmlTransformable): TSfmlVector2f; cdecl;
+  function SfmlTransformableGetPosition(const Transformable: PSfmlTransformable): TSfmlVector2f; cdecl;
+  function SfmlTransformableGetScale(const Transformable: PSfmlTransformable): TSfmlVector2f; cdecl;
+  function SfmlViewGetCenter(const View: PSfmlView): TSfmlVector2f; cdecl;
+  function SfmlViewGetSize(const View: PSfmlView): TSfmlVector2f; cdecl;
+  
+  
+floatrect workaround
+  
+  function SfmlCircleShapeGetLocalBounds(const Shape: PSfmlCircleShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getLocalBounds';
+  function SfmlCircleShapeGetGlobalBounds(const Shape: PSfmlCircleShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getGlobalBounds';
+  function SfmlConvexShapeGetLocalBounds(const Shape: PSfmlConvexShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getLocalBounds';
+  function SfmlConvexShapeGetGlobalBounds(const Shape: PSfmlConvexShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getGlobalBounds';
+  function SfmlRectangleShapeGetLocalBounds(const Shape: PSfmlRectangleShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getLocalBounds';
+  function SfmlRectangleShapeGetGlobalBounds(const Shape: PSfmlRectangleShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getGlobalBounds';
+  function SfmlShapeGetLocalBounds(const Shape: PSfmlShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfShape_getLocalBounds';
+  function SfmlShapeGetGlobalBounds(const Shape: PSfmlShape): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfShape_getGlobalBounds';
+  function SfmlSpriteGetLocalBounds(const Sprite: PSfmlSprite): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfSprite_getLocalBounds';
+  function SfmlSpriteGetGlobalBounds(const Sprite: PSfmlSprite): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfSprite_getGlobalBounds';
+  function SfmlTextGetLocalBounds(const Text: PSfmlText): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfText_getLocalBounds';
+  function SfmlTextGetGlobalBounds(const Text: PSfmlText): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfText_getGlobalBounds';
+  function SfmlTransformTransformRect(const Transform: PSfmlTransform; Rectangle: TSfmlFloatRect): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfTransform_transformRect';
+  function SfmlVertexArrayGetBounds(VertexArray: PSfmlVertexArray): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfVertexArray_getBounds';
+  function SfmlViewGetViewport(const View: PSfmlView): TSfmlFloatRect; cdecl; external CSfmlGraphicsLibrary name 'sfView_getViewport';
+  
+
+//CSFML function implementation
+{
+	sfVector2f ret = sfCircleShape_getPoint(shape, index);
+	*retVal = ret;  
+}
+  
+  
+  
+//raspberry bindings
+procedure SfmlCircleShapeGetPointInternal(const Shape: PSfmlCircleShape; Index: NativeUInt; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getPointP';
+procedure SfmlCircleShapeGetPositionInternal(const Shape: PSfmlCircleShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getPositionP';
+procedure SfmlCircleShapeGetOriginInternal(const Shape: PSfmlCircleShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getOriginP';
+procedure SfmlCircleShapeGetScaleInternal(const Shape: PSfmlCircleShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getScaleP';
+procedure SfmlConvexShapeGetOriginInternal(const Shape: PSfmlConvexShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getOriginP';
+procedure SfmlConvexShapeGetPointInternal(const Shape: PSfmlConvexShape; Index: NativeUInt; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getPointP';
+procedure SfmlConvexShapeGetPositionInternal(const Shape: PSfmlConvexShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getPositionP';
+procedure SfmlConvexShapeGetScaleInternal(const Shape: PSfmlConvexShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getScaleP';
+function SfmlImageGetSizeInternal(const Image: PSfmlImage): TSfmlVector2u; cdecl; external CSfmlGraphicsLibrary name 'sfImage_getSize';
+procedure SfmlRectangleShapeGetOriginInternal(const Shape: PSfmlRectangleShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getOriginP';
+procedure SfmlRectangleShapeGetPointInternal(const Shape: PSfmlRectangleShape; Index: NativeUInt; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getPointP';
+procedure SfmlRectangleShapeGetPositionInternal(const Shape: PSfmlRectangleShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getPositionP';
+procedure SfmlRectangleShapeGetScaleInternal(const Shape: PSfmlRectangleShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getScaleP';
+procedure SfmlRectangleShapeGetSizeInternal(const Shape: PSfmlRectangleShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getSizeP';
+function SfmlRenderTextureGetSizeInternal(const RenderTexture: PSfmlRenderTexture): TSfmlVector2u; cdecl; external CSfmlGraphicsLibrary name 'sfRenderTexture_getSize';
+procedure SfmlRenderTextureMapPixelToCoordsInternal(const RenderTexture: PSfmlRenderTexture; Point: TSfmlVector2i; const View: PSfmlView; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRenderTexture_mapPixelToCoordsP';
+function SfmlRenderTextureMapCoordsToPixelInternal(const RenderTexture: PSfmlRenderTexture; Point: TSfmlVector2i; const View: PSfmlView): TSfmlVector2i; cdecl; external CSfmlGraphicsLibrary name 'sfRenderTexture_mapCoordsToPixel';
+function SfmlRenderWindowGetSizeInternal(const RenderWindow: PSfmlRenderWindow): TSfmlVector2u; cdecl; external CSfmlGraphicsLibrary name 'sfRenderWindow_getSize';
+procedure SfmlRenderWindowMapPixelToCoordsInternal(const RenderWindow: PSfmlRenderWindow; Point: TSfmlVector2i; const View: PSfmlView; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRenderWindow_mapPixelToCoordsP';
+function SfmlRenderWindowMapCoordsToPixelInternal(const RenderWindow: PSfmlRenderWindow; Point: TSfmlVector2i; const View: PSfmlView): TSfmlVector2i; cdecl; external CSfmlGraphicsLibrary name 'sfRenderWindow_mapCoordsToPixel';
+function SfmlMouseGetPositionRenderWindowInternal(const RelativeTo: PSfmlRenderWindow): TSfmlVector2i; cdecl; external CSfmlGraphicsLibrary name 'sfMouse_getPositionRenderWindow';
+function SfmlTouchGetPositionRenderWindowInternal(Finger: Cardinal; const RelativeTo: PSfmlRenderWindow): TSfmlVector2i; cdecl; external CSfmlGraphicsLibrary name 'sfTouch_getPositionRenderWindow';
+procedure SfmlShapeGetOriginInternal(const Shape: PSfmlShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_getOriginP';
+procedure SfmlShapeGetPointInternal(const Shape: PSfmlShape; Index: NativeUInt; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_getPointP';
+procedure SfmlShapeGetPositionInternal(const Shape: PSfmlShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_getPositionP';
+procedure SfmlShapeGetScaleInternal(const Shape: PSfmlShape; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_getScaleP';
+procedure SfmlSpriteGetOriginInternal(const Sprite: PSfmlSprite; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_getOriginP';
+procedure SfmlSpriteGetPositionInternal(const Sprite: PSfmlSprite; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_getPositionP';
+procedure SfmlSpriteGetScaleInternal(const Sprite: PSfmlSprite; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_getScaleP';
+procedure SfmlTextFindCharacterPosInternal(const Text: PSfmlText; Index: NativeUInt; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_findCharacterPosP';
+procedure SfmlTextGetOriginInternal(const Text: PSfmlText; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_getOriginP';
+procedure SfmlTextGetPositionInternal(const Text: PSfmlText; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_getPositionP';
+procedure SfmlTextGetScaleInternal(const Text: PSfmlText; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_getScaleP';
+function SfmlTextureGetSizeInternal(const Texture: PSfmlTexture): TSfmlVector2u; cdecl; external CSfmlGraphicsLibrary name 'sfTexture_getSize';
+procedure SfmlTransformTransformPointInternal(const Transform: PSfmlTransform; Point: PTSfmlVector2f; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransform_transformPointP';
+procedure SfmlTransformableGetOriginInternal(const Transformable: PSfmlTransformable; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_getOriginP';
+procedure SfmlTransformableGetPositionInternal(const Transformable: PSfmlTransformable; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_getPositionP';
+procedure SfmlTransformableGetScaleInternal(const Transformable: PSfmlTransformable; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_getScaleP';
+procedure SfmlViewGetCenterInternal(const View: PSfmlView; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_getCenterP';
+procedure SfmlViewGetSizeInternal(const View: PSfmlView; RetVal: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_getSizeP';
+
+procedure SfmlCircleShapeSetPositionInternal(Shape: PSfmlCircleShape; Position: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_setPositionP';
+procedure SfmlCircleShapeSetScaleInternal(Shape: PSfmlCircleShape; Scale: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_setScaleP';
+procedure SfmlCircleShapeSetOriginInternal(Shape: PSfmlCircleShape; Origin: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_setOriginP';
+procedure SfmlCircleShapeMoveInternal(Shape: PSfmlCircleShape; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_moveP';
+procedure SfmlCircleShapeScaleInternal(Shape: PSfmlCircleShape; Factors: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_scaleP';
+procedure SfmlConvexShapeSetPositionInternal(Shape: PSfmlConvexShape; Position: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setPositionP';
+procedure SfmlConvexShapeSetScaleInternal(Shape: PSfmlConvexShape; Scale: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setScaleP';
+procedure SfmlConvexShapeSetOriginInternal(Shape: PSfmlConvexShape; Origin: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setOriginP';
+procedure SfmlConvexShapeMoveInternal(Shape: PSfmlConvexShape; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_moveP';
+procedure SfmlConvexShapeScaleInternal(Shape: PSfmlConvexShape; Factors: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_scaleP';
+procedure SfmlConvexShapeSetPointInternal(Shape: PSfmlConvexShape; Index: NativeUInt; Point: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_setPointP';
+procedure SfmlRectangleShapeSetPositionInternal(Shape: PSfmlRectangleShape; Position: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setPositionP';
+procedure SfmlRectangleShapeSetScaleInternal(Shape: PSfmlRectangleShape; Scale: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setScaleP';
+procedure SfmlRectangleShapeSetOriginInternal(Shape: PSfmlRectangleShape; Origin: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setOriginP';
+procedure SfmlRectangleShapeMoveInternal(Shape: PSfmlRectangleShape; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_moveP';
+procedure SfmlRectangleShapeScaleInternal(Shape: PSfmlRectangleShape; Factors: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_scaleP';
+procedure SfmlRectangleShapeSetSizeInternal(Shape: PSfmlRectangleShape; Size: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_setSizeP';
+procedure SfmlShaderSetVec2UniformInternal(Shader: PSfmlShader; const Name: PAnsiChar; Vector: PSfmlGlslVec2); cdecl; external CSfmlGraphicsLibrary name 'sfShader_setVec2Uniform';
+procedure SfmlShaderSetVector2ParameterInternal(Shader: PSfmlShader; const Name: PAnsiChar; Vector: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShader_setVector2ParameterP'; deprecated;
+procedure SfmlShapeSetPositionInternal(Shape: PSfmlShape; Position: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_setPositionP';
+procedure SfmlShapeSetScaleInternal(Shape: PSfmlShape; Scale: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_setScaleP';
+procedure SfmlShapeSetOriginInternal(Shape: PSfmlShape; Origin: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_setOriginP';
+procedure SfmlShapeMoveInternal(Shape: PSfmlShape; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_moveP';
+procedure SfmlShapeScaleInternal(Shape: PSfmlShape; Factors: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfShape_scaleP';
+procedure SfmlSpriteSetPositionInternal(Sprite: PSfmlSprite; Position: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_setPositionP';
+procedure SfmlSpriteSetScaleInternal(Sprite: PSfmlSprite; Scale: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_setScaleP';
+procedure SfmlSpriteSetOriginInternal(Sprite: PSfmlSprite; Origin: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_setOriginP';
+procedure SfmlSpriteMoveInternal(Sprite: PSfmlSprite; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_moveP';
+procedure SfmlSpriteScaleInternal(Sprite: PSfmlSprite; Factors: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_scaleP';
+procedure SfmlTextSetPositionInternal(Text: PSfmlText; Position: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_setPositionP';
+procedure SfmlTextSetScaleInternal(Text: PSfmlText; Scale: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_setScaleP';
+procedure SfmlTextSetOriginInternal(Text: PSfmlText; Origin: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_setOriginP';
+procedure SfmlTextMoveInternal(Text: PSfmlText; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_moveP';
+procedure SfmlTextScaleInternal(Text: PSfmlText; Factors: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfText_scaleP';
+procedure SfmlTransformableSetPositionInternal(Transformable: PSfmlTransformable; Position: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_setPositionP';
+procedure SfmlTransformableSetScaleInternal(Transformable: PSfmlTransformable; Scale: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_setScaleP';
+procedure SfmlTransformableSetOriginInternal(Transformable: PSfmlTransformable; Origin: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_setOriginP';
+procedure SfmlTransformableMoveInternal(Transformable: PSfmlTransformable; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_moveP';
+procedure SfmlTransformableScaleInternal(Transformable: PSfmlTransformable; Factors: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfTransformable_scaleP';
+procedure SfmlViewSetCenterInternal(View: PSfmlView; Center: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_setCenterP';
+procedure SfmlViewSetSizeInternal(View: PSfmlView; Size: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_setSizeP';
+procedure SfmlViewMoveInternal(View: PSfmlView; Offset: PTSfmlVector2f); cdecl; external CSfmlGraphicsLibrary name 'sfView_moveP';
+  
+procedure SfmlCircleShapeGetLocalBoundsInternal(const Shape: PSfmlCircleShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getLocalBoundsP';
+procedure SfmlCircleShapeGetGlobalBoundsInternal(const Shape: PSfmlCircleShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfCircleShape_getGlobalBoundsP';
+procedure SfmlConvexShapeGetLocalBoundsInternal(const Shape: PSfmlConvexShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getLocalBoundsP';
+procedure SfmlConvexShapeGetGlobalBoundsInternal(const Shape: PSfmlConvexShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfConvexShape_getGlobalBoundsP';
+procedure SfmlRectangleShapeGetLocalBoundsInternal(const Shape: PSfmlRectangleShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getLocalBoundsP';
+procedure SfmlRectangleShapeGetGlobalBoundsInternal(const Shape: PSfmlRectangleShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfRectangleShape_getGlobalBoundsP';
+procedure SfmlShapeGetLocalBoundsInternal(const Shape: PSfmlShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfShape_getLocalBoundsP';
+procedure SfmlShapeGetGlobalBoundsInternal(const Shape: PSfmlShape; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfShape_getGlobalBoundsP';
+procedure SfmlSpriteGetLocalBoundsInternal(const Sprite: PSfmlSprite; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_getLocalBoundsP';
+procedure SfmlSpriteGetGlobalBoundsInternal(const Sprite: PSfmlSprite; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfSprite_getGlobalBoundsP';
+procedure SfmlTextGetLocalBoundsInternal(const Text: PSfmlText; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfText_getLocalBoundsP';
+procedure SfmlTextGetGlobalBoundsInternal(const Text: PSfmlText; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfText_getGlobalBoundsP';
+procedure SfmlTransformTransformRectInternal(const Transform: PSfmlTransform; Rectangle: TSfmlFloatRect; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfTransform_transformRectP';
+procedure SfmlVertexArrayGetBoundsInternal(VertexArray: PSfmlVertexArray; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfVertexArray_getBoundsP';
+procedure SfmlViewGetViewportInternal(const View: PSfmlView; RetVal: PSfmlFloatRect); cdecl; external CSfmlGraphicsLibrary name 'sfView_getViewportP';  
+  

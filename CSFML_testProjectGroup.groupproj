@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FD70020B-7D52-417C-9397-4CF1D36AEDC0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CSFML.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VCL_test2.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CSFML">
+        <MSBuild Projects="CSFML.dproj"/>
+    </Target>
+    <Target Name="CSFML:Clean">
+        <MSBuild Projects="CSFML.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CSFML:Make">
+        <MSBuild Projects="CSFML.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VCL_test2">
+        <MSBuild Projects="VCL_test2.dproj"/>
+    </Target>
+    <Target Name="VCL_test2:Clean">
+        <MSBuild Projects="VCL_test2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCL_test2:Make">
+        <MSBuild Projects="VCL_test2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CSFML;VCL_test2"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CSFML:Clean;VCL_test2:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CSFML:Make;VCL_test2:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
